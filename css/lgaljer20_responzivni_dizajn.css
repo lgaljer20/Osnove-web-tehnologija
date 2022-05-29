@@ -1,0 +1,194 @@
+@media only screen and (min-width: 481px) {
+  * {
+    background-color: #b4c1c0;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+  }
+  a + h1 {
+    font-size: 22px;
+    text-align: center;
+    color: #162b8b;
+  }
+  nav a {
+    font-size: 15px;
+  }
+
+  nav a:visited {
+    color: green;
+  }
+
+  a:link {
+    color: #c629c9;
+  }
+  nav {
+    text-align: center;
+  }
+
+  .prijava {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  /* .logo {
+    text-align: center;
+    height: 300px;
+    width: 300px;
+  } */
+
+  main {
+    text-align: center;
+  }
+
+  .paragraf1 {
+    width: 40%;
+    margin-left: 31%;
+    font-size: 16px;
+  }
+
+  .podnozje1 p {
+    margin-top: 270px;
+    font-size: 16px;
+  }
+
+  #keksi {
+    display: grid;
+    justify-content: right;
+    margin-right: 50px;
+  }
+  .figcaption1 {
+    font-size: 15px;
+  }
+
+  .validator {
+    width: 150px;
+    font-size: 15px;
+  }
+  .validator-res {
+    width: 260px;
+  }
+
+  #canvas1 {
+    width: 400px;
+    height: 400px;
+  }
+  #keksi {
+    font-size: 20px;
+  }
+  #obrazacCanvas {
+    display: grid;
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto;
+
+    width: 400px;
+    margin-left: 740px;
+  }
+  img[src*="B222DCC875"] {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    left: 15px;
+  }
+
+  #multimedija {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto;
+  }
+
+  #slike {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  #video {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 40px;
+  }
+
+  #audio {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 50px;
+    gap: 15px;
+  }
+
+  #multimedija img {
+    height: 200px;
+    width: 200px;
+  }
+  #multimedija img:hover {
+    transform: scale(2.5);
+  }
+
+  #multimedija iframe {
+    height: 200px;
+    width: 200px;
+  }
+
+  .obrazacPrvi {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+  }
+
+  .obrazacPrijava {
+    margin-right: -200px;
+    margin-top: 50px;
+  }
+  .obrazacPrvi fieldset {
+    width: 700px;
+    height: 505px;
+  }
+
+  .fieldset1 {
+    margin-left: 1px;
+  }
+
+  tr:nth-child(even) {
+    color: #1746e2;
+  }
+
+  #tablica {
+    margin-left: 150px;
+  }
+
+  table {
+    justify-content: center;
+    border: 1px solid;
+    background-color: #eeb9a0;
+    width: 90%;
+    height: 70%;
+  }
+
+  th,
+  td {
+    border: 1px solid;
+    background-color: #eeb9a0;
+  }
+
+  tr:hover {
+    color: rgb(4, 141, 15);
+  }
+
+  table td:nth-child(2) ~ td {
+    display: revert;
+  }
+
+  table th:nth-child(2) ~ th {
+    display: revert;
+  }
+
+  .sekcija {
+    margin-left: 15px;
+    width: 1220px;
+    height: 300px;
+  }
+
+  #fieldset2 {
+    visibility: hidden;
+  }
+}

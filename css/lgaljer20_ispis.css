@@ -1,0 +1,100 @@
+@media print {
+  header nav,
+  footer {
+    display: none;
+  }
+  .prijava {
+    display: none;
+  }
+  img {
+    filter: grayscale(100%);
+  }
+  p {
+    color: black;
+  }
+  .slika {
+    overflow: scroll;
+    filter: grayscale(100%);
+  }
+
+  .logo {
+    filter: grayscale(100%);
+  }
+
+  .obrazacPrvi {
+    margin-top: 30px;
+    display: grid;
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  input[type="range"] {
+    filter: grayscale(100%);
+  }
+
+  input[type="radio"] {
+    filter: grayscale(100%);
+  }
+
+  input[type="reset"] {
+    display: none;
+  }
+
+  input[type="submit"] {
+    display: none;
+  }
+
+  #video {
+    display: none;
+  }
+  #audio {
+    display: none;
+  }
+
+  #slike img {
+    width: 100%;
+  }
+
+  #slike figcaption {
+    width: 100%;
+  }
+
+  #h3V {
+    display: none;
+  }
+
+  #h3A {
+    display: none;
+  }
+
+  .sekcija {
+    filter: grayscale(100%);
+  }
+
+  #tablica {
+    filter: grayscale(100%);
+  }
+
+  table td:nth-child(2) ~ td {
+    display: revert;
+  }
+
+  table th:nth-child(2) ~ th {
+    display: revert;
+  }
+
+  .sekcija {
+    margin-left: 15px;
+    width: 1220px;
+    height: 300px;
+  }
+
+  #tablica {
+    margin-top: 30px;
+  }
+
+  #fieldset2 {
+    visibility: visible;
+  }
+}

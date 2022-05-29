@@ -1,0 +1,230 @@
+* {
+  background-color: #b4c1c0;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+nav a:visited {
+  color: #d70909;
+}
+
+nav > a:active {
+  color: #64e80c;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 10px;
+}
+
+a ~ h1 {
+  text-align: center;
+  color: #3f252e;
+  font-size: 15px;
+}
+
+.prijava {
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+}
+img[src*="B222DCC875"] {
+  width: 60px;
+  height: 65px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+@keyframes rotiraj {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#button {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 30px;
+}
+/* .logo {
+  text-align: center;
+} */
+
+.paragraf1 {
+  text-align: center;
+  width: 60%;
+  margin-left: 20%;
+  font-size: 14px;
+}
+
+/* ovo je zapravo klasa za grid, ali se bugga i mora biti naziv flex?!? radi */
+.flex {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  align-items: center;
+  row-gap: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.validator {
+  text-align: center;
+  display: block;
+  background-color: transparent;
+  border: 1px solid transparent;
+
+  font-size: 8px;
+}
+
+.validator-res {
+  width: 150px;
+}
+
+.cleveland {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+#slike {
+  grid-template-columns: auto;
+}
+
+#slike img {
+  width: 200px;
+  height: 200px;
+}
+
+#video iframe {
+  margin-left: 15px;
+  width: 200px;
+  height: 200px;
+}
+
+.obrazacPrvi {
+  display: grid;
+  text-align: left;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+#keksi {
+  font-size: 10px;
+}
+
+#obrazacCanvas {
+  display: grid;
+  text-align: left;
+  display: grid;
+  grid-template-columns: auto;
+  visibility: hidden;
+}
+#fieldset2 {
+  visibility: visible;
+}
+
+.autor ul {
+  list-style-type: none;
+}
+
+.autor h3 {
+  margin-left: -30px;
+  font-size: 15px;
+}
+.autor cite {
+  font-size: 10px;
+}
+
+#rijeci {
+  margin-left: -20px;
+  font-size: 15px;
+}
+
+input[type="range"] {
+  font-size: 15px;
+}
+#tablica {
+  display: grid;
+  justify-content: center;
+}
+
+tr:nth-child(even) {
+  color: #1746e2;
+}
+
+th,
+td {
+  border: 1px solid;
+  background-color: #eeb9a0;
+}
+
+tr:hover {
+  color: rgb(4, 141, 15);
+}
+
+table td:nth-child(2) ~ td {
+  display: none;
+}
+
+.podnozje1 p {
+  margin-top: 270px;
+  font-size: 16px;
+}
+table th:nth-child(2) ~ th {
+  display: none;
+}
+
+table {
+  border: 1px solid;
+  background-color: #eeb9a0;
+  width: 300px;
+  height: 300px;
+}
+
+#sekcija {
+  overflow: visible;
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gumbi {
+  margin-top: 10px;
+  margin-right: 1px;
+  justify-content: center;
+}
+
+input[type="reset"] {
+  border: black;
+  border-style: double;
+  width: 200px;
+}
+
+input[type="submit"] {
+  border: black;
+  border-style: double;
+  width: 200px;
+}
+
+/* table{
+  display: none;
+}
+
+table td:nth-child(1), td:nth-child(2){
+  display:block;
+} */

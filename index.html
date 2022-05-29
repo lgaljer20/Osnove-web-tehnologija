@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Luka Galjer" />
+    <meta name="description" content="title, a, img" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Početna stranica</title>
+    <link rel="stylesheet" type="text/css" href="css/lgaljer20.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/lgaljer20_responzivni_dizajn.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/lgaljer20_ispis.css" />
+    <script src="js/lgaljer20.js"></script>
+  </head>
+
+  <body>
+    <header id="vrh">
+      <a href="index.html"
+        ><img
+          class="slika"
+          src="materijali/ball-for-basketball-logo-B222DCC875-seeklogo.com.png"
+          alt="https://seeklogo.com/images/B/ball-for-basketball-logo-B222DCC875-seeklogo.com.png"
+      /></a>
+      <h1>Početna stranica</h1>
+      <noscript> Vaš Web preglednik ne podržava JavaScript!</noscript>
+      <div class="linkovi">
+        <nav>
+          <p id="keksi"></p>
+          <a class="links" href="ostalo/o_autoru.html"> O autoru</a>
+          <a class="links" href="ostalo/multimedija.html">Multimedija</a>
+          <a class="links" href="obrazac.html">Obrazac</a>
+          <a class="links" href="podaci/popis.html">Podaci</a>
+          <a class="links" href="ostalo/kreativna.html">Kreativna</a>
+          <div id="prijavaOdjava">
+            <a id="link1" href="prijava.html"> Prijava </a>
+            <a id="link2" href=""> Odjava</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div style="margin-top: 100px">
+        <ul>
+          <li style="margin-bottom: 20px">
+            <a href="ostalo/o_autoru.html#lopta"
+              >Košarkaška lopta koja uvijek vodi na početnu stranicu se rotira
+              pri učitavanju stranice</a
+            >
+          </li>
+          <li style="margin-bottom: 20px">
+            <a href="ostalo/o_autoru.html#ime"
+              >Klikom miša na ime autora, boja i veličina fonta se mijenja.
+              Ponovnim klikom se vraća boja i veličina fonta na početnu boju i
+              veličinu.</a
+            >
+          </li>
+          <li style="margin-bottom: 20px">
+            <a href="ostalo/o_autoru.html#button"
+              >Klikom na gumb stisne me, slika autora se rotira za 180
+              stupenjeva
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <canvas id="canvas1" width="400" height="400"> </canvas>
+      <div style="margin-top: 50px; margin-right: 450px">
+        <button id="gumbPrikaz" type="button">Prikaži obrazac</button>
+      </div>
+      <form novalidate style="margin-top: 50px" id="obrazacCanvas">
+        <fieldset>
+          <p>Unesite koliko igrača nosi tenisice koje marke:</p>
+          <label>Nike (plava):</label>
+          <input type="number" max="400" id="nike1" name="nike" /> <br />
+          <label>Adidas (crvena):</label>
+          <input type="number" max="400" id="adidas1" name="adidas" />
+        </fieldset>
+        <input
+          style="margin-top: 20px; margin-left: 100px"
+          id="generiraj"
+          type="submit"
+          value=" Generiraj canvas"
+        />
+      </form>
+    </main>
+    <footer class="podnozje1">
+      <div>
+        <br />
+        <p>&#169; 2022. <a href="mailto:lgaljer20@foi.hr">Luka Galjer</a></p>
+      </div>
+
+      <div class="flex">
+        <div class="validator validator-ispis">
+          <a
+            href="https://jigsaw.w3.org/css-validator/validator?uri=https://spider.foi.hr/OWT/2022/zadaca_03/lgaljer20/css/lgaljer20_ispis.css"
+          >
+            <img
+              src="https://spider.foi.hr/OWT/materijali/slike/CSS3.png"
+              width="50"
+              height="50"
+              alt="CSS"
+            />
+          </a>
+          <span>lgaljer20_ispis.css</span>
+        </div>
+
+        <div class="validator validator-res">
+          <a
+            href="https://jigsaw.w3.org/css-validator/validator?uri=https://spider.foi.hr/OWT/2022/zadaca_03/lgaljer20/css/lgaljer20_responzivni_dizajn.css"
+          >
+            <img
+              src="https://spider.foi.hr/OWT/materijali/slike/CSS3.png"
+              width="50"
+              height="50"
+              alt="CSS"
+            />
+          </a>
+          <span>lgaljer20_responzivni_dizajn.css</span>
+        </div>
+
+        <div class="validator">
+          <a
+            href="https://jigsaw.w3.org/css-validator/validator?uri=https://spider.foi.hr/OWT/2022/zadaca_03/lgaljer20/css/lgaljer20.css"
+          >
+            <img
+              src="https://spider.foi.hr/OWT/materijali/slike/CSS3.png"
+              width="50"
+              height="50"
+              alt="CSS"
+            />
+          </a>
+          <span>lgaljer20.css</span>
+        </div>
+        <a
+          href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fspider.foi.hr%2FOWT%2F2022%2Fzadaca_03%2Flgaljer20%2Findex.html"
+        >
+          <img
+            src="https://spider.foi.hr/OWT/materijali/slike/HTML5.png"
+            width="50"
+            height="50"
+            alt="HTML5"
+        /></a>
+        <a
+          href="https://www.srce.unizg.hr/files/srce/docs/otvoreni-pristup/creative_commons_licence.pdf"
+          ><img
+            class="cc"
+            src="materijali/by.png"
+            alt="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png"
+            width="200"
+            height="50"
+        /></a>
+        <a class="cleveland" href="#vrh">
+          <img
+            src="materijali/cle_sidro.jpg"
+            alt="https://imgbin.com/png/zV0MZyF3/cleveland-cavaliers-nba-logo-fathead-png"
+            width="50"
+            height="50"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Luka Galjer" />
+    <meta name="description" content="fieldset, form, label" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/lgaljer20.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/lgaljer20_responzivni_dizajn.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/lgaljer20_ispis.css" />
+    <script src="js/lgaljer20.js"></script>
+    <title>Obrazac</title>
+  </head>
+
+  <body>
+    <header id="vrh">
+      <a href="index.html"
+        ><img
+          class="slika"
+          src="materijali/ball-for-basketball-logo-B222DCC875-seeklogo.com.png"
+          alt="https://seeklogo.com/images/B/ball-for-basketball-logo-B222DCC875-seeklogo.com.png"
+          width="75"
+          height="75"
+      /></a>
+      <h1>Obrazac</h1>
+      <noscript> Vaš Web preglednik ne podržava JavaScript!</noscript>
+      <div class="linkovi">
+        <nav>
+          <p id="keksi"></p>
+          <a class="links" href="index.html">Početna stranica</a>
+          <a class="links" href="ostalo/o_autoru.html">O autoru</a>
+          <a class="links" href="ostalo/multimedija.html">Multimedija</a>
+          <a class="links" href="podaci/popis.html">Podaci</a>
+          <a class="links" href="ostalo/kreativna.html">Kreativna</a>
+          <div id="prijavaOdjava">
+            <a id="link1" href="prijava.html"> Prijava </a>
+            <a id="link2" href=""> Odjava</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <br />
+      <form
+        novalidate
+        method="POST"
+        action="https://spider.foi.hr/OWT/materijali/ispis_forme.php"
+      >
+        <div class="obrazacPrvi">
+          <fieldset class="fieldset1">
+            <legend>Registracija</legend>
+            <label id="ime" for="ime_prezime">Ime i prezime</label>
+            <input
+              type="text"
+              id="ime_prezime"
+              name="ime_prezime"
+              placeholder="Pero Peric"
+              required
+            />
+            <br />
+            <label id="vrijeme" for="datum_vrijeme"
+              >Datum rođenja i vrijeme:
+            </label>
+            <input type="text" id="datum_vrijeme" name="datum_vrijeme" /><br />
+            <label id="mail" for="email">Email adresa:</label>
+            <input type="email" id="email" name="email" /><br />
+            <label id="pass" for="password">Lozinka:</label>
+            <input type="password" id="password" name="password" />
+            <br />
+          </fieldset>
+
+          <fieldset style="overflow: auto" id="fieldset2">
+            <legend>NBA</legend>
+            <div id="test1">
+              <label id="pozicija">Najdraža pozicija:</label>
+            </div>
+            <br />
+            <input
+              type="radio"
+              id="PG"
+              name="jednostruki_izbor"
+              value="PG"
+              required
+            />
+            <label for="PG">PG</label>
+            <br />
+            <input type="radio" id="SG" name="jednostruki_izbor" value="SG" />
+            <label for="SG">SG</label>
+            <br />
+            <input type="radio" id="SF" name="jednostruki_izbor" value="SF" />
+            <label for="SF">SF</label>
+            <br />
+            <input type="radio" id="PF" name="jednostruki_izbor" value="PF" />
+            <label for="PF">PF</label>
+            <br />
+            <input type="radio" id="C" name="jednostruki_izbor" value="C" />
+            <label for="C">C</label>
+            <br />
+            <label id="najdrazi" for="najdrazi_broj"
+              >Najdraži broj na dresu:
+            </label>
+            <input
+              type="number"
+              id="najdrazi_broj"
+              name="najdrazi_broj"
+              required
+            />
+            <br />
+
+            <label id="visestruki" for="visestruki_izbor"
+              >Odaberite najdraži tim:</label
+            >
+            <select
+              multiple
+              size="7"
+              id="visestruki_izbor"
+              name="visestruki_izbor[]"
+            >
+              <optgroup label="Istočna konferencija">
+                <option value="0001">Cleveland Cavaliers</option>
+                <option value="0002">Chicago Bulls</option>
+                <option value="0003">Brooklyn Nets</option>
+                <option value="0004">Boston Celtics</option>
+                <option value="0005">Miami Heat</option>
+              </optgroup>
+              <optgroup label="Zapadna konferencija">
+                <option value="0006">Los Angeles Lakers</option>
+                <option value="0007">Phoenix Suns</option>
+                <option value="0008">Golden State Warriors</option>
+                <option value="0009">Memphis Grizzlies</option>
+                <option value="0010">Dallas Mavericks</option>
+              </optgroup>
+            </select>
+            <br />
+            <label for="znanje_slider">Znanje o košarci:</label>
+            <input
+              type="range"
+              oninput=""
+              min="0"
+              max="10"
+              value="5"
+              name="znanje_slider"
+              id="znanje_slider"
+            />
+            <br />
+            <div id="test2">
+              <label id="kosarkasi2">Najdraži hrvati u NBA:</label>
+            </div>
+            <br />
+            <input
+              type="checkbox"
+              id="kosarkas1"
+              name="kosarkas"
+              value="Bojan Bogdanović"
+              class="hrvati"
+            />
+
+            <label for="kosarkas1"> Bojan Bogdanović</label><br />
+            <input
+              class="hrvati"
+              type="checkbox"
+              id="kosarkas2"
+              name="kosarkas"
+              value="Dario Šarić"
+            />
+            <label for="kosarkas2">Dario Šarić</label><br />
+            <input
+              class="hrvati"
+              type="checkbox"
+              id="kosarkas3"
+              name="kosarkas"
+              value="Luka Šamanić"
+            />
+            <label for="kosarkas3"> Luka Šamanić</label><br />
+            <input
+              class="hrvati"
+              type="checkbox"
+              id="kosarkas4"
+              name="kosarkas"
+              value="Ivica Zubac"
+            />
+            <label for="kosarkas4"> Ivica Zubac</label><br /><br />
+
+            <label id="viselinija" for="viselinijski_tekst"
+              >Opis najdražeg igrača:
+            </label>
+            <textarea
+              id="viselinijski_tekst"
+              name="viselinijski_tekst"
+              rows="10"
+              cols="40"
+            ></textarea>
+            <br />
+          </fieldset>
+        </div>
+        <div class="gumbi">
+          <input type="reset" value=" Reseteritaj podatke " />
+          <input id="submit" type="submit" value=" Registriraj se " />
+        </div>
+      </form>
+    </main>
+    <footer class="podnozje1">
+      <br />
+      <p>&#169; 2022. <a href="mailto:lgaljer20@foi.hr">Luka Galjer</a></p>
+      <div class="grid">
+        <a
+          href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fspider.foi.hr%2FOWT%2F2022%2Fzadaca_03%2Flgaljer20%2Fobrazac.html"
+        >
+          <img
+            src="https://spider.foi.hr/OWT/materijali/slike/HTML5.png"
+            width="50"
+            height="50"
+            alt="HTML5"
+        /></a>
+        <a
+          href="https://www.srce.unizg.hr/files/srce/docs/otvoreni-pristup/creative_commons_licence.pdf"
+          ><img
+            src="materijali/by.png"
+            alt="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png"
+            width="200"
+            height="50"
+        /></a>
+
+        <a href="#vrh">
+          <img
+            src="materijali/cle_sidro.jpg"
+            alt="https://imgbin.com/png/zV0MZyF3/cleveland-cavaliers-nba-logo-fathead-png"
+            width="50"
+            height="50"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
